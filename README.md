@@ -1,6 +1,6 @@
 # README
 
-## Programa em python com o jogo 2048.
+Programa com exemplo de aplicação do jogo "2048" em python.
 
 ### Dependências:
 
