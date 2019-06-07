@@ -69,13 +69,8 @@ def moveRight(board):
     If there are no differences, the random values will not be insertself.
     If there are diffenreces, the random values will be insert.
     """
-    print("oldBoard: {}".format(showBoard(oldBoard)))
-    print("board: {}".format(showBoard(board)))
     if np.array_equal(npOldBoard, npBoard) is False:
-        print(">>> DIFFERENT")
         addRandomValuesBoard(board)
-    else:
-        print(">>> EQUAL")
 
 
 def moveLeft(board):
