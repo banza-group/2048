@@ -67,7 +67,10 @@ def moveRight(board):
     npBoard = np.array(showBoard(board))
     """Compare the old and new board to verify any differences
     If there are no differences, the random values will not be insertself.
-    If there are diffenreces, the random values will be insert.
+    If there are differences, the random values will be insert.
+    It prevents to add random numbers when this happens:
+    You make a move to left, BUT there is no movement avaiable, so, the numbers don't move at all.
+    When this happens, there is no need to insert random numbers, because you should add new numbers only when the numbers on the board are moved.
     """
     if np.array_equal(npOldBoard, npBoard) is False:
         addRandomValuesBoard(board)
